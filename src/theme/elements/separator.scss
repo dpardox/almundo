@@ -1,0 +1,7 @@
+.separator {
+  background-color: transparent;
+
+  &--dashed {
+    border-bottom: 1px dashed $grey-darker;
+  }
+}

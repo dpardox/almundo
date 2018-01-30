@@ -1,4 +1,17 @@
 $blue: #002979;
 $yellow: #ffbb00;
+$grey-darker: #777777;
 $primary: $blue;
 $body-background-color: #f4f4f4;
+
+@import 'node_modules/bulma/sass/utilities/initial-variables';
+@import 'node_modules/bulma/sass/utilities/functions';
+
+$orange: #e16800;
+$orange-invert: findColorInvert($orange);
+
+@import 'node_modules/bulma/sass/utilities/derived-variables';
+
+$addColors: ('orange':($orange, $orange-invert));
+
+$colors: map-merge($colors, $addColors);
