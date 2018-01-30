@@ -1,0 +1,8 @@
+.filter {
+  background-color: white;
+
+  &__header,
+  &__content {
+    border-bottom: 1px solid #ddd;
+  }
+}

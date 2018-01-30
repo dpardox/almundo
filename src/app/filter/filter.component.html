@@ -1,0 +1,130 @@
+<div class="filter">
+  <div class="filter__header has-text-centered pt-8 pb-8" (click)="open()">
+    <strong class="has-text-primary">
+      Filtrar
+      <span class="icon">
+        <i class="fa fa-sort-desc fa-lg"></i>
+      </span>
+    </strong>
+  </div>
+
+  <div class="filter__content p-16" *ngIf="expand">
+    <p class="has-text-primary mb-16">
+      <span class="icon">
+        <i class="fa fa-search"></i>
+      </span>
+      <strong class="has-text-primary">Nombre del hotel</strong>
+    </p>
+
+    <div class="field has-addons">
+      <div class="control">
+        <input class="input" type="text" placeholder="Ingrese el nombre del hotel">
+      </div>
+      <div class="control">
+        <a class="button is-primary">Aceptar</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="filter__content p-16" *ngIf="expand">
+    <p class="has-text-primary mb-16">
+      <span class="icon">
+        <i class="fa fa-star"></i>
+      </span>
+      <strong class="has-text-primary">Estrellas</strong>
+    </p>
+
+    <div class="field">
+      <div class="control">
+        <label class="checkbox">
+          <input type="checkbox" checked> Todas las estrellas
+        </label>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="control">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="icon is-small has-text-warning">
+            <i class="fa fa-star"></i>
+          </span>
+          <span class="icon is-small  has-text-warning">
+            <i class="fa fa-star"></i>
+          </span>
+          <span class="icon is-small  has-text-warning">
+            <i class="fa fa-star"></i>
+          </span>
+          <span class="icon is-small  has-text-warning">
+            <i class="fa fa-star"></i>
+          </span>
+          <span class="icon is-small  has-text-warning">
+            <i class="fa fa-star"></i>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="control">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="icon is-small has-text-warning">
+            <i class="fa fa-star"></i>
+          </span>
+          <span class="icon is-small  has-text-warning">
+            <i class="fa fa-star"></i>
+          </span>
+          <span class="icon is-small  has-text-warning">
+            <i class="fa fa-star"></i>
+          </span>
+          <span class="icon is-small  has-text-warning">
+            <i class="fa fa-star"></i>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="control">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="icon is-small has-text-warning">
+            <i class="fa fa-star"></i>
+          </span>
+          <span class="icon is-small  has-text-warning">
+            <i class="fa fa-star"></i>
+          </span>
+          <span class="icon is-small  has-text-warning">
+            <i class="fa fa-star"></i>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="control">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="icon is-small has-text-warning">
+            <i class="fa fa-star"></i>
+          </span>
+          <span class="icon is-small  has-text-warning">
+            <i class="fa fa-star"></i>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="control">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="icon is-small has-text-warning">
+            <i class="fa fa-star"></i>
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>

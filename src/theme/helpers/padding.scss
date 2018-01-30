@@ -1,0 +1,42 @@
+$padding-sizes: (
+  0,
+  8,
+  16,
+  24,
+  32,
+  40,
+  64,
+  128,
+  256
+);
+
+$padding-names: (
+  'top',
+  'right',
+  'bottom',
+  'left'
+);
+
+$padding-positions: (
+  't',
+  'r',
+  'b',
+  'l'
+);
+
+.p {
+  @each $size in $padding-sizes {
+    &-#{$size} {
+      padding: #{$size}px !important;
+    }
+  }
+
+  @each $position in $padding-positions {
+    $i: index($padding-positions, $position);
+    @each $size in $padding-sizes {
+      &#{$position}-#{$size} {
+        padding-#{nth($padding-names, $i)}: #{$size}px !important;
+      }
+    }
+  }
+}
