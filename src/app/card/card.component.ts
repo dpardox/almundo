@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { HotelInterface } from '../../interfaces/hotel.interface';
 
 @Component({
   selector: 'app-card',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
+  @Input() hotel: HotelInterface;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  get stars() {
+    return Array(this.hotel.stars).fill(null);
   }
 
+  ngOnInit() {}
 }

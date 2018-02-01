@@ -2,6 +2,6 @@
 
 <section class="section pt-16">
   <div class="container">
-    <app-card></app-card>
+    <app-card *ngFor="let hotel of hotels" [hotel]="hotel"></app-card>
   </div>
 </section>
