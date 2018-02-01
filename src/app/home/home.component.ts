@@ -13,13 +13,11 @@ export class HomeComponent implements OnInit {
   constructor(private hotel: HotelService) {}
 
   ngOnInit() {
-    this.hotel.list().subscribe(
-      (data) => {
-        this.hotels = data;
-      },
-      (exception) => {
-        console.error('Error', exception);
-      }
-    );
+    this.hotel.get().subscribe((hotels) => {
+      console.log(hotels.length);
+      this.hotels = hotels;
+    });
+
+    this.hotel.list();
   }
 }
