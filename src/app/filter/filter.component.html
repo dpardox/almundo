@@ -18,10 +18,10 @@
 
     <div class="field has-addons">
       <div class="control">
-        <input class="input" type="text" placeholder="Ingrese el nombre del hotel">
+        <input [(ngModel)]="name" class="input" type="text" placeholder="Ingrese el nombre del hotel">
       </div>
       <div class="control">
-        <a class="button is-primary">Aceptar</a>
+        <a class="button is-primary" (click)="search()">Aceptar</a>
       </div>
     </div>
   </div>
