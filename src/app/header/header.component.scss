@@ -1,0 +1,11 @@
+@import 'node_modules/bulma/sass/utilities/mixins';
+
+@include tablet {
+  .navbar-item img {
+    max-height: 2.75rem;
+  }
+
+  .navbar-item {
+    padding: 1rem 1rem;
+  }
+}
