@@ -1,8 +1,13 @@
+@import 'node_modules/bulma/sass/utilities/mixins';
+
 .filter {
   background-color: white;
 
   &__header,
   &__content {
     border-bottom: 1px solid #ddd;
+    @include desktop {
+      border-bottom: 3px solid #f4f4f4;
+    }
   }
 }

@@ -1,7 +1,14 @@
-<app-filter></app-filter>
+<app-filter class="is-hidden-desktop"></app-filter>
 
 <section class="section pt-16">
   <div class="container">
-    <app-card *ngFor="let hotel of hotels" [hotel]="hotel"></app-card>
+    <div class="columns is-desktop">
+      <div class="column is-narrow is-hidden-touch">
+        <app-filter [expand]="true" [desktop]="true"></app-filter>
+      </div>
+      <div class="column">
+        <app-card *ngFor="let hotel of hotels" [hotel]="hotel"></app-card>
+      </div>
+    </div>
   </div>
 </section>

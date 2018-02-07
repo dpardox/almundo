@@ -1,11 +1,15 @@
 <div class="filter">
-  <div class="filter__header has-text-centered pt-8 pb-8" (click)="open()">
+  <div class="filter__header has-text-centered pt-8 pb-8" (click)="open()" *ngIf="!desktop">
     <strong class="has-text-primary">
       Filtrar
       <span class="icon">
         <i class="fa" [ngClass]="expand ? 'fa-angle-up' : 'fa-angle-down'"></i>
       </span>
     </strong>
+  </div>
+
+  <div class="filter__header pt-8 pb-8 pl-16" *ngIf="desktop">
+    <strong class="has-text-dark">Filtros</strong>
   </div>
 
   <div class="filter__content p-16" *ngIf="expand">

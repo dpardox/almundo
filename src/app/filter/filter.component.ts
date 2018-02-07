@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { HotelService } from '../../services/hotel/hotel.service';
 
 @Component({
@@ -7,7 +7,8 @@ import { HotelService } from '../../services/hotel/hotel.service';
   styleUrls: ['./filter.component.scss']
 })
 export class FilterComponent implements OnInit {
-  public expand = false;
+  @Input() expand = false;
+  @Input() desktop = false;
   public name = '';
   public stars: object;
 
@@ -23,7 +24,9 @@ export class FilterComponent implements OnInit {
 
   public search() {
     this.hotel.search(this.name, this.stars);
-    this.expand = false;
+    if (!this.desktop) {
+      this.expand = false;
+    }
   }
 
   public all() {
