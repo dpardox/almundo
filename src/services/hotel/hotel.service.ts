@@ -26,8 +26,12 @@ export class HotelService {
     this.hotelsSubject.next(hotels);
   }
 
-  public search(name: string) {
-    const hotels = this.hotels.filter((hotel: HotelInterface) => hotel.name.toLowerCase().indexOf(name.toLowerCase()) > -1);
+  public search(name: string, stars: object) {
+    const hotels = this.hotels.filter((hotel: HotelInterface) => {
+      const ifName = hotel.name.toLowerCase().indexOf(name.toLowerCase()) > -1;
+      const ifStars = stars[0] ? true : stars[hotel.stars];
+      return ifName && ifStars;
+    });
     this.push(hotels);
   }
 }

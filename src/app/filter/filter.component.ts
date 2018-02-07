@@ -9,18 +9,28 @@ import { HotelService } from '../../services/hotel/hotel.service';
 export class FilterComponent implements OnInit {
   public expand = false;
   public name = '';
+  public stars: object;
 
   constructor(private hotel: HotelService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.all();
+  }
 
   public open() {
     this.expand = !this.expand;
   }
 
   public search() {
-    console.log(this.name);
-    this.hotel.search(this.name);
+    this.hotel.search(this.name, this.stars);
     this.expand = false;
+  }
+
+  public all() {
+    this.stars = { 0: true, 1: false, 2: false, 3: false, 4: false, 5: false };
+  }
+
+  public custom() {
+    this.stars[0] = false;
   }
 }

@@ -37,7 +37,7 @@
     <div class="field">
       <div class="control">
         <label class="checkbox">
-          <input type="checkbox" checked> Todas las estrellas
+          <input [(ngModel)]="stars[0]" type="checkbox" checked (change)="all()"> Todas las estrellas
         </label>
       </div>
     </div>
@@ -45,7 +45,7 @@
     <div class="field">
       <div class="control">
         <label class="checkbox">
-          <input type="checkbox">
+          <input [(ngModel)]="stars[5]" type="checkbox" (change)="custom()">
           <span class="icon is-small has-text-warning">
             <i class="fa fa-star"></i>
           </span>
@@ -68,7 +68,7 @@
     <div class="field">
       <div class="control">
         <label class="checkbox">
-          <input type="checkbox">
+          <input [(ngModel)]="stars[4]" type="checkbox" (change)="custom()">
           <span class="icon is-small has-text-warning">
             <i class="fa fa-star"></i>
           </span>
@@ -88,7 +88,7 @@
     <div class="field">
       <div class="control">
         <label class="checkbox">
-          <input type="checkbox">
+          <input [(ngModel)]="stars[3]" type="checkbox" (change)="custom()">
           <span class="icon is-small has-text-warning">
             <i class="fa fa-star"></i>
           </span>
@@ -105,7 +105,7 @@
     <div class="field">
       <div class="control">
         <label class="checkbox">
-          <input type="checkbox">
+          <input [(ngModel)]="stars[2]" type="checkbox" (change)="custom()">
           <span class="icon is-small has-text-warning">
             <i class="fa fa-star"></i>
           </span>
@@ -119,7 +119,7 @@
     <div class="field">
       <div class="control">
         <label class="checkbox">
-          <input type="checkbox">
+          <input [(ngModel)]="stars[1]" type="checkbox" (change)="custom()">
           <span class="icon is-small has-text-warning">
             <i class="fa fa-star"></i>
           </span>
