@@ -7,6 +7,7 @@
 * Uso del framework de CSS [Bulma.io](https://bulma.io/).
 * Uso de [Trello](https://trello.com/) para realizar la planeación y seguimientos de las diferentes tareas realizadas.
 * Pruebas en diferentes navegadores modernos (Chrome, Firefox, Safari, Edge).
+* Se encuentra publicada la versión compilada de del proyecto Angular `ng build -prod` en un subdominio que apunta a un servidor basado en Linux.
 
 ## Instalar proyecto
 
