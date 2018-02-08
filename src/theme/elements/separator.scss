@@ -1,7 +1,18 @@
 .separator {
   background-color: transparent;
+  border-color: $grey-darker;
 
-  &--dashed {
-    border-bottom: 1px dashed $grey-darker;
+  &.is-dashed {
+    border-style: dashed;
+  }
+
+  &.is-horizontal {
+    border-width: 0;
+    border-bottom-width: 1px;
+  }
+
+  &.is-vertical {
+    border-width: 0;
+    border-right-width: 1px;
   }
 }

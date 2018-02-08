@@ -1,0 +1,32 @@
+@import 'node_modules/bulma/sass/utilities/mixins';
+
+.card {
+  @include mobile {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include tablet {
+    display: flex;
+    width: 100%;
+
+    &-image {
+      width: 360px;
+    }
+
+    &-content {
+      display: flex;
+      width: 100%;
+    }
+
+    &-info {
+      flex: 1;
+    }
+
+    &-price {
+      max-width: 230px;
+      align-self: center;
+    }
+  }
+}

@@ -30,6 +30,12 @@ $margin-positions: (
     @each $size in $margin-sizes {
       &#{$position}-#{$size} {
         margin-#{nth($margin-names, $i)}: #{$size}px !important;
+
+        @include mobile {
+          &-mobile {
+            margin-#{nth($margin-names, $i)}: #{$size}px !important;
+          }
+        }
       }
     }
   }
