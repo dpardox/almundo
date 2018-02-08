@@ -14,7 +14,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.hotel.get().subscribe((hotels) => {
-      console.log(hotels.length);
       this.hotels = hotels;
     });
 

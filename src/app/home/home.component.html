@@ -6,7 +6,10 @@
       <div class="column is-narrow is-hidden-touch is-hidden-desktop-only">
         <app-filter [expand]="true" [desktop]="true"></app-filter>
       </div>
-      <div class="column">
+      <div class="column" *ngIf="hotels && !hotels.length">
+        <h5 class="title is-primary is-size-5">No se encontraron hoteles</h5>
+      </div>
+      <div class="column" *ngIf="hotels && hotels.length">
         <app-card *ngFor="let hotel of hotels" [hotel]="hotel"></app-card>
       </div>
     </div>
