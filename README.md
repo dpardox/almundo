@@ -6,6 +6,7 @@
 * El código se encuentra escrito siguiendo la [guía de estilos de Angular](https://angular.io/guide/styleguide).
 * Uso del framework de CSS [Bulma.io](https://bulma.io/).
 * Uso de [Trello](https://trello.com/) para realizar la planeación y seguimientos de las diferentes tareas realizadas.
+* Pruebas en diferentes navegadores modernos (Chrome, Firefox, Safari, Edge).
 
 ## Instalar proyecto
 
