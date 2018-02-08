@@ -21,3 +21,5 @@ Ejecutar el comando `ng serve` para subir un servidor local y navegar a `http://
 **Nota:** Algunas imágenes de hoteles se encuentran dañadas por lo que su renderización en el navegador no será correcta.
 
 **Nota:** Versión unicamente en FrontEnd, no realiza conexión a un API pero hace la simulación de consulta con un archivo `.json`.
+
+**Nota:** Sin soporte para versiones antiguas de internet explorer.
