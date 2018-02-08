@@ -5,6 +5,7 @@
 * Implementa el [Principio de responsabilidad única](https://es.wikipedia.org/wiki/Principio_de_responsabilidad_%C3%BAnica) en cada uno de sus componentes.
 * El código se encuentra escrito siguiendo la [guía de estilos de Angular](https://angular.io/guide/styleguide).
 * Uso del framework de CSS [Bulma.io](https://bulma.io/).
+* Uso de [Trello](https://trello.com/) para realizar la planeación y seguimientos de las diferentes tareas realizadas.
 
 ## Instalar proyecto
 
